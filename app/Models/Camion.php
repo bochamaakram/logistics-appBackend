@@ -13,6 +13,7 @@ class Camion extends Model
         'num_jawas',
         'matrecul',
         'kilométrage',
+        'vidange',
         'poids_max',
         'hauteur_max',
         'largeur_max',

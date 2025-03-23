@@ -177,7 +177,7 @@
 
             <!-- Prix Plein (Number Input) -->
             <div class="form-group mb-3">
-                <label for="prix_Plein">Gasoils</label>
+                <label for="prix_Plein">Gasoil</label>
                 <input type="number" name="prix_Plein" class="form-control" value="{{ old('prix_Plein') }}" step="0.01" required>
             </div>
 

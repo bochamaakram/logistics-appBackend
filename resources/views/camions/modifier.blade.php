@@ -39,14 +39,6 @@
             @csrf
             @method('PUT')
             <div class="mb-3">
-                <label for="num_jawas" class="form-label">Numéro Jawaz</label>
-                <input type="text" class="form-control" id="num_jawas" name="num_jawas" value="{{ $camion->num_jawas }}" required>
-            </div>
-            <div class="mb-3">
-                <label for="matrecul" class="form-label">Matricule</label>
-                <input type="text" class="form-control" id="matrecul" name="matrecul" value="{{ $camion->matrecul }}" required>
-            </div>
-            <div class="mb-3">
                 <label for="kilométrage" class="form-label">kilométrage</label>
                 <input type="text" class="form-control" id="kilométrage" name="kilométrage" value="{{ $camion->kilométrage }}" required>
             </div>

@@ -56,6 +56,15 @@
                 @enderror
             </div>
 
+
+            <!-- vidange -->
+            <div class="mb-3">
+                <label for="vidange" class="form-label">dernier vidange</label>
+                <input type="text" class="form-control @error('vidange') is-invalid @enderror" id="vidange" name="vidange" value="{{ $vidange ?? '' }}" required>
+                @error('vidange')
+                    <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+            </div>
             <!-- Poids Max -->
             <div class="mb-3">
                 <label for="poids_max" class="form-label">Poids Max (kg)</label>

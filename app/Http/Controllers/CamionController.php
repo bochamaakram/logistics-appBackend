@@ -32,8 +32,6 @@ class CamionController extends Controller
 {
     // Validate the request data
     $validator = Validator::make($request->all(), [
-        'num_jawas' => 'required|string|unique:camions',
-        'matrecul' => 'required|string|unique:camions',
         'kilométrage' => 'required|numeric',
         'poids_max' => 'required|numeric',
         'hauteur_max' => 'required|numeric',
@@ -85,6 +83,7 @@ class CamionController extends Controller
             'num_jawas' => 'required|string|unique:camions',
             'matrecul' => 'required|string|unique:camions',
             'kilométrage' => 'required|numeric',
+            'vidange' => 'required|numeric',
             'poids_max' => 'required|numeric',
             'hauteur_max' => 'required|numeric',
             'largeur_max' => 'required|numeric',

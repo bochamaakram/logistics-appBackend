@@ -13,6 +13,7 @@ return new class extends Migration
             $table->string('num_jawas')->unique();
             $table->string('matrecul')->unique();
             $table->decimal('kilométrage', 10, 2);
+            $table->decimal('vidange', 10, 2);
             $table->decimal('poids_max', 10, 2);
             $table->decimal('hauteur_max', 10, 2);
             $table->decimal('largeur_max', 10, 2);

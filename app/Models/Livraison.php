@@ -30,8 +30,4 @@ class livraison extends Model
         'hauteur',
         'remarque',
     ];
-    public function getPoidsTotalAttribute()
-{
-    return $this->quantite * optional($this->produit)->poids;
-}
 }

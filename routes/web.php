@@ -6,14 +6,16 @@ use App\Http\Controllers\CamionController;
 use App\Http\Controllers\ChauffeurController;
 use App\Http\Controllers\LivraisonController;
 use App\Http\Controllers\ClientController;
-use App\Http\Controllers\DeliveryController;
+
 // Show the menu page
 Route::get('/produits/create', [ProduitController::class, 'create'])->name('produits.create');
 Route::post('/produits', [ProduitController::class, 'store'])->name('produits.store');
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/livraison/{id}/info', function () {
+    return view('livraison.info');
+});
 // Show the form to add a product
 Route::get('/produits/create', [ProduitController::class, 'create'])->name('produits.create');
 Route::post('/produits/store', [ProduitController::class, 'store'])->name('produits.store');
@@ -98,7 +100,7 @@ Route::get('/camions/{id}/supprimer', [CamionController::class, 'destroy'])->nam
 //supprimer livraisons by id
 Route::get('/livraisons/{id}/supprimer', [LivraisonController::class, 'destroy'])->name('livraisons.supprimer');
 
-//
-Route::prefix('api')->group(function () {
-Route::get('/deliveries', [DeliveryController::class, 'index']);
-});
+
+Route::get('/{any}', function () {
+    return view('index'); // Serve the React app's index.html
+})->where('any', '.*');
