@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add Client</title>
+    <title>Ajouter un Client</title>
     <!-- Add Bootstrap CSS (optional) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="container mt-5"><a href="http://127.0.0.1:8000" class="btn btn-outline-success">revenir à l' accueil</a>
-        <h1 class="mb-4">Add New Client</h1>
+        <h1 class="mb-4">Ajouter un Client</h1>
 
         <!-- Display success message if exists -->
         @if(session('success'))

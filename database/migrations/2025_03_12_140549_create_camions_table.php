@@ -12,8 +12,8 @@ return new class extends Migration
             $table->id();
             $table->string('num_jawas')->unique();
             $table->string('matrecul')->unique();
-            $table->decimal('kilométrage', 10, 2);
-            $table->decimal('vidange', 10, 2);
+            $table->integer('kilométrage')->length(11);
+            $table->integer('vidange')->length(11);
             $table->decimal('poids_max', 10, 2);
             $table->decimal('hauteur_max', 10, 2);
             $table->decimal('largeur_max', 10, 2);
