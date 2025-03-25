@@ -41,14 +41,3 @@ php artisan migrate
 # Start the Laravel server
 php artisan serve
 ```
-
-### Frontend Setup:
-```sh
-cd frontend
-
-# Install dependencies
-npm install
-
-# Start the React app
-npm run dev
-```
